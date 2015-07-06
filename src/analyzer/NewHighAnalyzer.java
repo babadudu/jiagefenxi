@@ -8,4 +8,6 @@ package analyzer;
  */
 public class NewHighAnalyzer extends Analyzer {
 
+	
+	
 }

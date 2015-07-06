@@ -22,9 +22,10 @@
   		<artifactId>gson</artifactId>
   	</dependency>
   	 <dependency>
-  		<groupId>org.apache.commons</groupId>
-  		<artifactId>math3</artifactId>
-  	</dependency>
+  	 	<groupId>org.apache.commons</groupId>
+  	 	<artifactId>commons-math3</artifactId>
+  	 	<version>3.5</version>
+  	 </dependency>
   </dependencies>
   <dependencyManagement>
   	<dependencies>
@@ -32,11 +33,6 @@
   			<groupId>com.google.code.gson</groupId>
   			<artifactId>gson</artifactId>
   			<version>2.3.1</version>
-  		</dependency>
-  		 <dependency>
-  			<groupId>org.apache.commons</groupId>
-  			<artifactId>math3</artifactId>
-  			<version>3.5</version>
   		</dependency>
   	</dependencies>
   </dependencyManagement>
