@@ -1,6 +1,7 @@
 package utils;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import data.Stock;
@@ -45,10 +46,11 @@ public class Downloader {
 		
 		//3. store
 		
-		
-		
 	}
 	
+	private static void fromYahoo(Stock stock, Date fromDate, Date toDate) {
+//		http://real-chart.finance.yahoo.com/table.csv?s=YHOO&a=3&b=12&c=1996&d=6&e=5&f=2015
+	}
 	
 
 }
