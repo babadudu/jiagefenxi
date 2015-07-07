@@ -63,7 +63,7 @@ public class Downloader {
 	 */
 	private static void fromYahoo(Stock stock, Date fromDate, Date toDate) {
 //		http://real-chart.finance.yahoo.com/table.csv?s=YHOO&a=3&b=12&c=1996&d=6&e=5&f=2015
-		//another test
+		//changed name
 	}
 
 
