@@ -48,6 +48,19 @@ public class Downloader {
 		
 	}
 	
+	/**
+	 * sn = TICKER
+	 * a = fromMonth-1
+	 * b = fromDay (two digits)
+	 * c = fromYear
+	 * d = toMonth-1
+	 * e = toDay (two digits)
+	 * f = toYear
+	 * g = d for day, m for month, y for yearly
+	 * @param stock
+	 * @param fromDate
+	 * @param toDate
+	 */
 	private static void fromYahoo(Stock stock, Date fromDate, Date toDate) {
 //		http://real-chart.finance.yahoo.com/table.csv?s=YHOO&a=3&b=12&c=1996&d=6&e=5&f=2015
 	}
