@@ -1,5 +1,6 @@
 package utils;
 
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -47,7 +48,12 @@ public class Downloader {
 		//3. store
 		
 	}
-	
+
+	public static Date getLastRecordedDate(Stock stock) {
+
+		return null;
+	}
+
 	/**
 	 * sn = TICKER
 	 * a = fromMonth-1
@@ -57,14 +63,29 @@ public class Downloader {
 	 * e = toDay (two digits)
 	 * f = toYear
 	 * g = d for day, m for month, y for yearly
-	 * @param stock
-	 * @param fromDate
-	 * @param toDate
 	 */
-	private static void fromYahoo(Stock stock, Date fromDate, Date toDate) {
-//		http://real-chart.finance.yahoo.com/table.csv?s=YHOO&a=3&b=12&c=1996&d=6&e=5&f=2015
-		//changed name
+	private static void getDataFromYahoo(Stock stock, Date fromDate, Date toDate) {
+	//http://real-chart.finance.yahoo.com/table.csv?s=YHOO&a=3&b=12&c=1996&d=6&e=5&f=2015
+
+		try {
+			URL url = new URL("http://real-chart.finance.yahoo.com/table.csv?s=" + stock.getSymbol() + "&a=" + a + "&b=" + b + "&c=" + c + " &d=" + d + "&e=" + e + "&f=" +f);
+
+			FileUtils.copyURLToFile(url, File);
+
+		} catch (Exception e) {
+			System.out.println("Unable to download file");
+		}
+
 	}
 
+
+	public static void main(String[] args) {
+
+		Stock s = new Stock();
+		s.setSymbol("YAHOO");
+
+//		Downloader.getDataFromYahoo(s, );
+
+	}
 
 }
