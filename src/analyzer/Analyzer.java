@@ -8,6 +8,8 @@ public class Analyzer {
 	boolean isDownTrend;
 	boolean isTight;
 	
+	static boolean REFRESHDATA = false; //refresh data not yet done.
+	
 	/**
 	 * retrieve data for THE analyzer
 	 */

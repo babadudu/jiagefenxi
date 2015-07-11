@@ -10,13 +10,33 @@ public class Stock {
 	String fullName;
 	Date lastModified;
 	//current high
+	double lastPrice;
 	double historicHigh;
 	double resistance;
 	double support;
-	
+	public boolean isBrokenNewHigh;
+
 	Range range;
 	Gson data;
 
+	public double getLastPrice() {
+		return lastPrice;
+	}
+	public void setLastPrice(double lastPrice) {
+		this.lastPrice = lastPrice;
+	}
+	public boolean isBrokenNewHigh() {
+		return isBrokenNewHigh;
+	}
+	public void setBrokenNewHigh(boolean isBrokenNewHigh) {
+		this.isBrokenNewHigh = isBrokenNewHigh;
+	}
+	public Range getRange() {
+		return range;
+	}
+	public void setRange(Range range) {
+		this.range = range;
+	}
 	public Gson getData() {
 		return data;
 	}

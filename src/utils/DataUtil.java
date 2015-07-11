@@ -4,8 +4,11 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
-public class DataConverter {
+import data.Stock;
+
+public class DataUtil {
 
 	public static void csvToRange() {
 		
@@ -20,5 +23,18 @@ public class DataConverter {
 		Date date = dateFormat.parse(dateString);
 		
 		return date;
+	}
+
+	public static void loadData(Stock s) {
+		//@TODO MEAT&BONE load from Local JSON string and convert into stock s objects
+		
+		
+	}
+
+	public static void loadDatas(List<Stock> stocks) {
+		for(Stock s : stocks) {
+			loadData(s);
+		}
+		
 	}
 }
